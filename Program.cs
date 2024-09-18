@@ -67,7 +67,7 @@ class Program
                 }
 
                 Guest GID = new Guest();
-                Console.WriteLine(GID.GuestID());
+                
             }
             else if (choice == 0)
             {
