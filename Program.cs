@@ -8,7 +8,6 @@ class Program
 
         do
         {
-            Console.Clear();
             Console.WriteLine("Welcome to HYDAC \n\n" +
                               "Are you an employee or a guest?\n" +
                               "1. Employee\n" +
@@ -21,6 +20,9 @@ class Program
             {
                 Console.WriteLine("Please enter your name: ");
                 string name = Console.ReadLine();
+                
+                Console.Clear();
+                Console.WriteLine($"Hello {name}");
                 
             }
             else if (choice == 2)
@@ -53,12 +55,19 @@ class Program
                 string message = "";
                 if (folder == true)
                 {
-                    message = $"Hello {name}, please proceed to the waiting area";
+                    message = $"Hello {name}, please proceed to the waiting area\n";
+                    Console.Clear();
+                    Console.WriteLine(message);
                 }
                 else if (folder == false)
                 {
-                    message = $"Hello {name}, please ask front desk for a safety folder, and proceed to the waiting area";
+                    message = $"Hello {name}, please ask front desk for a safety folder, and proceed to the waiting area\n";
+                    Console.Clear();
+                    Console.WriteLine(message);
                 }
+
+                Guest GID = new Guest();
+                Console.WriteLine(GID.GuestID());
             }
             else if (choice == 0)
             {
@@ -66,7 +75,8 @@ class Program
             }
             else
             {
-                Console.WriteLine("Error: Invalid input. Try again.");
+                Console.Clear();
+                Console.WriteLine("Error: Invalid input. Try again.\n");
             }
 
         } while (hold == true);
