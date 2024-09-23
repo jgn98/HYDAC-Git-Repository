@@ -13,3 +13,18 @@
 /Users/jonasg.nielsen/RiderProjects/HYDAC Projekt/obj/Debug/net8.0/HYDAC Projekt.genruntimeconfig.cache
 /Users/jonasg.nielsen/RiderProjects/HYDAC Projekt/obj/Debug/net8.0/ref/HYDAC Projekt.dll
 /Users/jonasg.nielsen/RiderProjects/HYDAC Projekt/obj/Debug/net8.0/HYDAC Projekt.sourcelink.json
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/bin/Debug/net8.0/HYDAC Projekt
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/bin/Debug/net8.0/HYDAC Projekt.deps.json
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/bin/Debug/net8.0/HYDAC Projekt.runtimeconfig.json
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/bin/Debug/net8.0/HYDAC Projekt.dll
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/bin/Debug/net8.0/HYDAC Projekt.pdb
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.AssemblyInfoInputs.cache
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.AssemblyInfo.cs
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.csproj.CoreCompileInputs.cache
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.sourcelink.json
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.dll
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/refint/HYDAC Projekt.dll
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.pdb
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/HYDAC Projekt.genruntimeconfig.cache
+/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/Debug/net8.0/ref/HYDAC Projekt.dll

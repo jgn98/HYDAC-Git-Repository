@@ -13,7 +13,7 @@ public class Log
         DateTime Now = DateTime.Now;
         string Time = DateTime.Now.ToString();
         string[] GuestCheckIn = { Time };
-        string IdString = Convert.ToString(GID.GuestID());
-        File.AppendAllLines(HydacLog, new string[] { IdString, Time });
+        //string IdString = Convert.ToString(GID.GuestID());
+        //File.AppendAllLines(HydacLog, new string[] { IdString, Time });
     }
 }

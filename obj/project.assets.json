@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jonasg.nielsen/RiderProjects/HYDAC Projekt/HYDAC Projekt.csproj",
+      "projectUniqueName": "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HYDAC Projekt.csproj",
       "projectName": "HYDAC Projekt",
-      "projectPath": "/Users/jonasg.nielsen/RiderProjects/HYDAC Projekt/HYDAC Projekt.csproj",
+      "projectPath": "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HYDAC Projekt.csproj",
       "packagesPath": "/Users/jonasg.nielsen/.nuget/packages/",
-      "outputPath": "/Users/jonasg.nielsen/RiderProjects/HYDAC Projekt/obj/",
+      "outputPath": "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jonasg.nielsen/.nuget/NuGet/NuGet.Config"
