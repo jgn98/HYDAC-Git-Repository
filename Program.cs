@@ -7,7 +7,6 @@ class Program
     static void Main(string[] args)
     {
         bool MenuHold = true;
-        string Email = "";
 
         do
         {
@@ -18,22 +17,26 @@ class Program
             switch (Choice)
             {
                 case 1:
+                    Log ECheckIn = new Log();
                     Employee EmployeeCheckIn = new Employee();
                     EmployeeCheckIn.EmployeeInfo();
+                    ECheckIn.EmployeeCheckIn(EmployeeCheckIn);
                     break;
 
                 case 2:
                     MenuStart.GuestMenu();
                     int PreviousVisit = int.Parse(Console.ReadLine());
-
+                    Log GCheckIn = new Log();
                     Guest GuestCheckIn = new Guest();
                     switch (PreviousVisit)
                     {
                         case 1:
-                           GuestCheckIn.PreviousGuest();
+                            GuestCheckIn.PreviousGuest();
+                            GCheckIn.GuestCheckIn(GuestCheckIn);
                             break;
                         case 2:
                             GuestCheckIn.NewGuest();
+                            GCheckIn.GuestCheckIn(GuestCheckIn);
                             break;
                     }
                     break;
@@ -47,8 +50,7 @@ class Program
                     break;
 
                 default:
-                    Console.Clear();
-                    Console.WriteLine("Error: Invalid input. Try again.\n");
+                    MenuStart.Error();
                     break;
             }
         } while (MenuHold == true);

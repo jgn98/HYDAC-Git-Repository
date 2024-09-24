@@ -27,4 +27,10 @@ public class Menu
         string CheckOut = Console.ReadLine();
         Console.WriteLine("You have now been checked out");
     }
+
+    public void Error()
+    {
+        Console.Clear();
+        Console.WriteLine("Error: Invalid input, please try again.");
+    }
 }

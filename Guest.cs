@@ -14,8 +14,7 @@ public class Guest
     Employee ContactInfo = new Employee();
         //statisk variable , der holder styr på nummeret
         private static int Guestcount = 0;
-
-
+    
         public void NewGuest()
         {
             Console.WriteLine("Please enter your name: ");
@@ -30,7 +29,7 @@ public class Guest
             Console.WriteLine("Please enter your contact person: ");
             GuestContact = Console.ReadLine();
             
-            Console.WriteLine("Please confirm that you have recieved and read the safety folder:\n" +
+            Console.WriteLine("Please confirm that you have received and read the safety folder:\n" +
                               "1. Yes\n" +
                               "2. No");
             int Safety = int.Parse(Console.ReadLine());
@@ -49,14 +48,14 @@ public class Guest
             string Message = "";
             if (Folder == true)
             {
-                Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact {ContactInfo.Contact()} will be with you shortly\n";
+                Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
                 Console.Clear();
                 Console.WriteLine(Message);
             }
             else if (Folder == false)
             {
                 Message =
-                    $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact {ContactInfo.Contact()} will be with you shortly \n";
+                    $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
                 Console.Clear();
                 Console.WriteLine(Message);
                 Folder = true;
@@ -67,6 +66,14 @@ public class Guest
         {
             Console.WriteLine("Please enter your email address: ");
             GuestEmail = Console.ReadLine();
-            Console.WriteLine($"Welcome {GuestName} ");
+            Console.WriteLine("Please enter your contact person: ");
+            GuestContact = Console.ReadLine();
+            Console.WriteLine($"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
+        }
+
+        public string LogInfo()
+        {
+            string Message = ($"Name: {GuestName}, Company: {GuestCompany}, Email: {GuestEmail}, Contact: {GuestContact}");
+            return Message;
         }
 }

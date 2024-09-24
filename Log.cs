@@ -4,16 +4,33 @@ namespace HYDAC_Projekt;
 
 public class Log
 {
-    public void GuestCheckIn()
+    //sti til tekstfilen.
+    string filePath = "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HydacGuests.txt";
+    
+    
+    public void GuestCheckIn(Guest GuestCheckIn)
     {
-        string HydacGuests = @"C:\Users\simon\Desktop\Hydac Projekt\HydacGuests.txt";
-        string HydacLog = @"C:\Users\simon\Desktop\Hydac Projekt\HydacLog.txt";
-        Guest GID = new Guest();
-
+  
         DateTime Now = DateTime.Now;
         string Time = DateTime.Now.ToString();
-        string[] GuestCheckIn = { Time };
-        //string IdString = Convert.ToString(GID.GuestID());
-        //File.AppendAllLines(HydacLog, new string[] { IdString, Time });
+        
+        //skriver til tekstfilen
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine($"{GuestCheckIn.LogInfo()}, {Time}");
+            }
+    }
+    public void EmployeeCheckIn(Employee EmployeeCheckIn)
+    {
+  
+        DateTime Now = DateTime.Now;
+        string Time = DateTime.Now.ToString();
+        
+        //skriver til tekstfilen
+        using (StreamWriter writer = new StreamWriter(filePath, true))
+        {
+            writer.WriteLine($"{EmployeeCheckIn.LogInfo()}, {Time}");
+        }
     }
 }
+
