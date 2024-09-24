@@ -3,15 +3,15 @@ namespace HYDAC_Projekt;
 public class Guest
 
 {
-    public string guestname = "";
+    private string GuestName = "";
     
-    private string guestemail = "";
+    private string GuestEmail = "";
 
-    private string guestcompany = "";
+    private string GuestCompany = "";
 
-    private string guestcontact = "";
+    private string GuestContact = "";
     
-    
+    Employee ContactInfo = new Employee();
         //statisk variable , der holder styr på nummeret
         private static int Guestcount = 0;
 
@@ -19,54 +19,54 @@ public class Guest
         public void NewGuest()
         {
             Console.WriteLine("Please enter your name: ");
-            guestname = Console.ReadLine();
+            GuestName = Console.ReadLine();
 
             Console.WriteLine("Please enter your company: ");
-            guestcompany = Console.ReadLine();
+            GuestCompany = Console.ReadLine();
 
             Console.WriteLine("Please enter your e-mail address: ");
-            guestemail = Console.ReadLine();
+            GuestEmail = Console.ReadLine();
 
             Console.WriteLine("Please enter your contact person: ");
-            guestcontact = Console.ReadLine();
+            GuestContact = Console.ReadLine();
             
             Console.WriteLine("Please confirm that you have recieved and read the safety folder:\n" +
                               "1. Yes\n" +
                               "2. No");
-            int safety = int.Parse(Console.ReadLine());
-            bool folder = false;
+            int Safety = int.Parse(Console.ReadLine());
+            bool Folder = false;
 
-            switch (safety)
+            switch (Safety)
             {
                 case 1:
-                    folder = true;
+                    Folder = true;
                     break;
                 case 2:
-                    folder = false;
+                    Folder = false;
                     break;
             }
 
-            string message = "";
-            if (folder == true)
+            string Message = "";
+            if (Folder == true)
             {
-                message = $"Hello {guestname}, please proceed to the waiting area\n";
+                Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact {ContactInfo.Contact()} will be with you shortly\n";
                 Console.Clear();
-                Console.WriteLine(message);
+                Console.WriteLine(Message);
             }
-            else if (folder == false)
+            else if (Folder == false)
             {
-                message =
-                    $"Hello {guestname}, please ask front desk for a safety folder, and proceed to the waiting area\n";
+                Message =
+                    $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact {ContactInfo.Contact()} will be with you shortly \n";
                 Console.Clear();
-                Console.WriteLine(message);
-                folder = true;
+                Console.WriteLine(Message);
+                Folder = true;
             }
         }
 
-        public void previousguest()
+        public void PreviousGuest()
         {
             Console.WriteLine("Please enter your email address: ");
-            guestemail = Console.ReadLine();
-            Console.WriteLine($"Welcome {guestname} ");
+            GuestEmail = Console.ReadLine();
+            Console.WriteLine($"Welcome {GuestName} ");
         }
 }

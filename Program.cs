@@ -11,52 +11,38 @@ class Program
 
         do
         {
-            Console.WriteLine("Welcome to HYDAC \n\n" +
-                              "Are you an employee or a guest?\n" +
-                              "1. Employee Check-In\n" +
-                              "2. Guest Check-In\n" +
-                              "3. Check-Out\n\n" +
-                              "0. Exit");
+            Menu MenuStart = new Menu();
+            MenuStart.MainMenu();
+            int Choice = int.Parse(Console.ReadLine());
 
-            int choice = int.Parse(Console.ReadLine());
-
-            switch (choice)
+            switch (Choice)
             {
                 case 1:
-                    Console.WriteLine("Please enter your name: ");
-                    string EmployeeName = Console.ReadLine();
-
-                    Console.Clear();
-                    Console.WriteLine($"Hello {EmployeeName}");
+                    Employee EmployeeCheckIn = new Employee();
+                    EmployeeCheckIn.EmployeeInfo();
                     break;
 
                 case 2:
-                    Console.WriteLine("Have you signed in to HYDAC on a previous visit?: \n" +
-                                      "1. Yes\n" +
-                                      "2. No\n");
+                    MenuStart.GuestMenu();
                     int PreviousVisit = int.Parse(Console.ReadLine());
 
-                    Guest guest = new Guest();
+                    Guest GuestCheckIn = new Guest();
                     switch (PreviousVisit)
                     {
                         case 1:
-                           guest.previousguest();
+                           GuestCheckIn.PreviousGuest();
                             break;
                         case 2:
-                            guest.NewGuest();
-
+                            GuestCheckIn.NewGuest();
                             break;
                     }
                     break;
 
                 case 3:
-                    Console.WriteLine("Please enter your email address to check-out: ");
-                    string CheckOut = Console.ReadLine();
-                    Console.WriteLine("You have now been checked out");
+                   MenuStart.CheckOut();
                     break;
 
                 case 0:
-
                     MenuHold = false;
                     break;
 
