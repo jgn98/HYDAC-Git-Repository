@@ -6,6 +6,7 @@ public class Employee
     private string EmployeeEmail = "";
     private string EmployeeDepartment = "";
     
+    //Asks the employee for their email
     public void EmployeeInfo()
     {
         Console.WriteLine("Please enter your email address: ");
@@ -34,6 +35,8 @@ public class Employee
     {
         return EmployeeName + " from " + EmployeeDepartment;
     }
+    
+    //Returns the assigned values to the log file when called
     public string LogInfo()
     {
         string Message = ($"Name: {EmployeeName}, Email: {EmployeeEmail}, Department: {EmployeeDepartment}");

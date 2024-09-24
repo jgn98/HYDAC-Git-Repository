@@ -13,8 +13,10 @@ public class Guest
     
     Employee ContactInfo = new Employee();
         //statisk variable , der holder styr på nummeret
-        private static int Guestcount = 0;
+        //private static int Guestcount = 0;
     
+        
+        //Asks the new guest for several inputs
         public void NewGuest()
         {
             Console.WriteLine("Please enter your name: ");
@@ -61,7 +63,8 @@ public class Guest
                 Folder = true;
             }
         }
-
+        
+        //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
         public void PreviousGuest()
         {
             Console.WriteLine("Please enter your email address: ");
@@ -70,7 +73,8 @@ public class Guest
             GuestContact = Console.ReadLine();
             Console.WriteLine($"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
         }
-
+        
+        //Returns assigned values to the log file when called
         public string LogInfo()
         {
             string Message = ($"Name: {GuestName}, Company: {GuestCompany}, Email: {GuestEmail}, Contact: {GuestContact}");
