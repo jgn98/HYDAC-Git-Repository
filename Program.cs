@@ -40,54 +40,10 @@ class Program
                     switch (PreviousVisit)
                     {
                         case 1:
-                            Console.WriteLine("Please enter your email address: ");
-                            Email = Console.ReadLine();
-                            Console.WriteLine($"Welcome {guest.guestname} ");
+                           guest.previousguest();
                             break;
                         case 2:
-                            Console.WriteLine("Please enter your name: ");
-                            guest.GuestName();
-
-                            Console.WriteLine("Please enter your company: ");
-                            string GuestCompany = Console.ReadLine();
-
-                            Console.WriteLine("Please enter your e-mail address: ");
-                            Email = Console.ReadLine();
-
-                            Console.WriteLine("Please enter your contact person: ");
-                            string GuestContact = Console.ReadLine();
-
-                            Console.WriteLine("Please confirm that you have recieved and read the safety folder:\n" +
-                                              "1. Yes\n" +
-                                              "2. No");
-                            int safety = int.Parse(Console.ReadLine());
-                            bool folder = false;
-
-                            switch (safety)
-                            {
-                                case 1:
-                                    folder = true;
-                                    break;
-                                case 2:
-                                    folder = false;
-                                    break;
-                            }
-
-                            string message = "";
-                            if (folder == true)
-                            {
-                                message = $"Hello {guest.guestname}, please proceed to the waiting area\n";
-                                Console.Clear();
-                                Console.WriteLine(message);
-                            }
-                            else if (folder == false)
-                            {
-                                message =
-                                    $"Hello {guest.guestname}, please ask front desk for a safety folder, and proceed to the waiting area\n";
-                                Console.Clear();
-                                Console.WriteLine(message);
-                                folder = true;
-                            }
+                            guest.NewGuest();
 
                             break;
                     }
