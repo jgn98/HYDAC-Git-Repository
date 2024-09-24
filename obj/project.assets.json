@@ -8,25 +8,27 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/jonasg.nielsen/.nuget/packages/": {}
+    "C:\\Users\\Simon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HYDAC Projekt.csproj",
+      "projectUniqueName": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HYDAC Projekt.csproj",
       "projectName": "HYDAC Projekt",
-      "projectPath": "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HYDAC Projekt.csproj",
-      "packagesPath": "/Users/jonasg.nielsen/.nuget/packages/",
-      "outputPath": "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/obj/",
+      "projectPath": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HYDAC Projekt.csproj",
+      "packagesPath": "C:\\Users\\Simon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jonasg.nielsen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -65,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

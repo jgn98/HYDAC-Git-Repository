@@ -1,0 +1,9 @@
+Name: Jonas, Company: UCL, Email: test, Contact: Simon, 24.09.2024 17.37.49
+Name: Simon From, Company: UCL, Email: simon@gmail.com, Contact: Jonas, 24-09-2024 20:34:16
+Check-In: Name: Simon, Company: UCL, Email: test, Contact: Jonas, 24-09-2024 20:35:59
+Check-In: Name: 2, Company: 2, Email: 2, Contact: 2, 24-09-2024 20:39:21
+Check-In: Name: 2, Company: 2, Email: 2, Contact: 2, 24-09-2024 20:39:51
+Check-In: Name: 2, Company: 2, Email: 2, Contact: 2, 24-09-2024 20:39:56
+Check-In: Name: 2, Company: 2, Email: 2, Contact: 2, 24-09-2024 20:40:19
+Check-In: Name: 2, Company: 2, Email: 2, Contact: 2, 24-09-2024 20:43:07
+

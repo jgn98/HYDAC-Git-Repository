@@ -12,12 +12,15 @@ public class Guest
     private string GuestContact = "";
     
     Employee ContactInfo = new Employee();
-        //statisk variable , der holder styr på nummeret
-        //private static int Guestcount = 0;
-    
-        
-        //Asks the new guest for several inputs
-        public void NewGuest()
+    //statisk variable , der holder styr på nummeret
+    private static int Guestcount = 0;
+    //Reads the check in file and counts the lines and saves in Guestcount
+    private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
+    private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
+
+
+    //Asks the new guest for several inputs
+    public void NewGuest()
         {
             Console.WriteLine("Please enter your name: ");
             GuestName = Console.ReadLine();
@@ -53,6 +56,7 @@ public class Guest
                 Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
                 Console.Clear();
                 Console.WriteLine(Message);
+                
             }
             else if (Folder == false)
             {
@@ -61,7 +65,8 @@ public class Guest
                 Console.Clear();
                 Console.WriteLine(Message);
                 Folder = true;
-            }
+                
+        }
         }
         
         //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
@@ -80,4 +85,19 @@ public class Guest
             string Message = ($"Name: {GuestName}, Company: {GuestCompany}, Email: {GuestEmail}, Contact: {GuestContact}");
             return Message;
         }
+        
+        //Returns the number of people that are left in the building.
+        //Needs to account for employees also!!!
+        public int PeopleCheckedIn()
+        {
+            Guestcount = (GuestcountCheckIn - GuestcountCheckOut);
+            Console.WriteLine($"\nThe number of people on the premises  is: {Guestcount}\n");
+            return Guestcount;
+        }
+
+        public int PeopleCheckedOut()
+        {
+            return GuestcountCheckOut;
+        }
+
 }

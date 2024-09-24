@@ -50,7 +50,16 @@ class Program
 
                 case 3:
                     //Calls checkout method
-                   MenuStart.CheckOut();
+                    MenuStart.CheckOut();
+                    Log GCheckOut = new Log();
+                    Guest GuestCheckOut = new Guest();
+                    GCheckOut.GuestCheckOut(GuestCheckOut);
+                    break;
+
+                case 4:
+                    //Shows how many people are checked in
+                    Guest PeopleInBuilding = new Guest();
+                    PeopleInBuilding.PeopleCheckedIn();
                     break;
 
                 case 0:

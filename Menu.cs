@@ -6,11 +6,12 @@ public class Menu
     public void MainMenu()
     {
         //Writes main menu to console and asks for user input
-        Console.WriteLine("Welcome to HYDAC \n\n" +
+        Console.WriteLine($"Welcome to HYDAC \n\n" +
                           "Are you an employee or a guest?\n" +
                           "1. Employee Check-In\n" +
                           "2. Guest Check-In\n" +
-                          "3. Check-Out\n\n" +
+                          "3. Check-Out\n" +
+                          "4. Number of people checked in\n\n" +
                           "0. Exit");
          Choice = int.Parse(Console.ReadLine());
     }
