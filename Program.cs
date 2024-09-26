@@ -39,11 +39,13 @@ class Program
                             GuestCheckIn.PreviousGuest();
                             //Running the guest check-in method from log class, using the variable from guest class in order to save the inputted data
                             GCheckIn.GuestCheckIn(GuestCheckIn);
+                            GuestCheckIn.CheckedIn();
                             break;
                         case 2:
                             GuestCheckIn.NewGuest();
                             //Running the guest check-in method from log class, using the variable from guest class in order to save the inputted data
                             GCheckIn.GuestCheckIn(GuestCheckIn);
+                            GuestCheckIn.CheckedIn();
                             break;
                     }
                     break;
@@ -53,13 +55,14 @@ class Program
                     MenuStart.CheckOut();
                     Log GCheckOut = new Log();
                     Guest GuestCheckOut = new Guest();
-                    GCheckOut.GuestCheckOut(GuestCheckOut);
+                    GCheckOut.GuestCheckOut(GuestCheckOut);                  
+                    GuestCheckOut.CheckedOut();
                     break;
 
                 case 4:
                     //Shows how many people are checked in
                     Guest PeopleInBuilding = new Guest();
-                    PeopleInBuilding.PeopleCheckedIn();
+                    PeopleInBuilding.UpdateGuestCount();
                     break;
 
                 case 0:

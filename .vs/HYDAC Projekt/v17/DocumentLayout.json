@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +23,12 @@
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\hydacguestscheckout.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:hydacguestscheckout.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\hydacguestscheckin.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:hydacguestscheckin.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\hydacguestscheckout.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:hydacguestscheckout.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +38,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HydacGuestsCheckIn.txt",
+              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
+              "RelativeDocumentMoniker": "HydacGuestsCheckIn.txt",
+              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
+              "RelativeToolTip": "HydacGuestsCheckIn.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-24T19:17:57.063Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -50,89 +64,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "HydacGuestsCheckOut.txt",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckOut.txt",
               "RelativeDocumentMoniker": "HydacGuestsCheckOut.txt",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckOut.txt",
               "RelativeToolTip": "HydacGuestsCheckOut.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-09-24T19:17:57.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HydacGuestsCheckIn.txt",
-              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
-              "RelativeDocumentMoniker": "HydacGuestsCheckIn.txt",
-              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
-              "RelativeToolTip": "HydacGuestsCheckIn.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-09-24T19:17:57.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Log.cs",
-              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Log.cs",
-              "RelativeDocumentMoniker": "Log.cs",
-              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Log.cs",
-              "RelativeToolTip": "Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T18:32:43.93Z",
+              "WhenOpened": "2024-09-24T19:17:57.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Guest.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Guest.cs",
               "RelativeDocumentMoniker": "Guest.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Guest.cs",
               "RelativeToolTip": "Guest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAF4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:45.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Log.cs",
+              "RelativeDocumentMoniker": "Log.cs",
+              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Log.cs",
+              "RelativeToolTip": "Log.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T18:32:43.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Employee.cs",
               "RelativeDocumentMoniker": "Employee.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Employee.cs",
               "RelativeToolTip": "Employee.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:45.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwDcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:43.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:42.805Z",
               "EditorCaption": ""
