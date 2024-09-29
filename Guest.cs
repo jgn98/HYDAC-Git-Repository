@@ -14,12 +14,7 @@ public class Guest
     
     
     Employee ContactInfo = new Employee();
-    //statisk variable , der holder styr på nummeret
-    private static int Guestcount = 0;
-    //Reads the check in file and counts the lines and saves in Guestcount
-    //private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
-    //private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
-
+    
 
     //Asks the new guest for several inputs
     public void NewGuest()
@@ -59,6 +54,7 @@ public class Guest
             Console.Clear();
             Console.WriteLine(Message);
             
+            
         }
         else if (Folder == false)
         {
@@ -68,7 +64,9 @@ public class Guest
             Console.WriteLine(Message);
             Folder = true;
             
+
         }
+        
     }
     
     //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
@@ -79,6 +77,7 @@ public class Guest
         Console.WriteLine("Please enter your contact person: ");
         GuestContact = Console.ReadLine();
         Console.WriteLine($"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
+        
     }
     
     //Returns assigned values to the log file when called
@@ -90,34 +89,26 @@ public class Guest
 
     //Returns the number of people that are left in the building.
     //Needs to account for employees also!!!
+ 
+    //Reads the check in file and counts the lines and saves in Guestcount
+    private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
+    private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
 
-
-    //Use this to store and update the counted lines in logs
-   /* private int GuestcountCheckIn = 0;
-    private int GuestcountCheckOut = 0;
     private int GuestCount = 0;
 
     public void UpdateGuestCount()
     {
-        GuestCount = GuestcountCheckIn - GuestcountCheckOut;
-        Console.WriteLine($"\nThe number of people on the premises is: {GuestCount}\n");
+       Console.WriteLine($"\nThe number of people on the premises is: {GuestCount}\n");
     }
 
-    public void CheckedIn(int guests)
+    public void CheckedIn()
     {
-        GuestcountCheckIn += guests;
-        UpdateGuestCount();
+        GuestCount ++;       
     }
 
-    public void CheckedOut(int guests)
+    public void CheckedOut()
     {
-        GuestcountCheckOut += guests;
-        UpdateGuestCount();
+        GuestCount -= 1;        
     }
-
-    public int PeopleCheckedIn()
-    {
-        return GuestCount;
-    }*/
 
 }
