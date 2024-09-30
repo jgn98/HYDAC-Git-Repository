@@ -3,16 +3,14 @@ namespace HYDAC_Projekt;
 public class Guest
 
 {
-    private string GuestName = "";
+    private string guestName = "";
     
-    private string GuestEmail = "";
+    private string guestEmail = "";
 
-    private string GuestCompany = "";
+    private string guestCompany = "";
 
-    private string GuestContact = "";
+    private string guestContact = "";
 
-    
-    
     Employee ContactInfo = new Employee();
     
 
@@ -20,16 +18,16 @@ public class Guest
     public void NewGuest()
     {
         Console.WriteLine("Please enter your name: ");
-        GuestName = Console.ReadLine();
+        guestName = Console.ReadLine();
 
         Console.WriteLine("Please enter your company: ");
-        GuestCompany = Console.ReadLine();
+        guestCompany = Console.ReadLine();
 
         Console.WriteLine("Please enter your e-mail address: ");
-        GuestEmail = Console.ReadLine();
+        guestName = Console.ReadLine();
 
         Console.WriteLine("Please enter your contact person: ");
-        GuestContact = Console.ReadLine();
+        guestContact = Console.ReadLine();
         
         Console.WriteLine("Please confirm that you have received and read the safety folder:\n" +
                           "1. Yes\n" +
@@ -50,21 +48,17 @@ public class Guest
         string Message = "";
         if (Folder == true)
         {
-            Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
+            Message = $"Hello {guestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
             Console.Clear();
-            Console.WriteLine(Message);
-            
-            
+            Console.WriteLine(Message);     
         }
         else if (Folder == false)
         {
             Message =
-                $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
+                $"Hello {guestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
             Console.Clear();
             Console.WriteLine(Message);
             Folder = true;
-            
-
         }
         
     }
@@ -73,42 +67,25 @@ public class Guest
     public void PreviousGuest()
     {
         Console.WriteLine("Please enter your email address: ");
-        GuestEmail = Console.ReadLine();
+        guestName = Console.ReadLine();
         Console.WriteLine("Please enter your contact person: ");
-        GuestContact = Console.ReadLine();
-        Console.WriteLine($"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
+        guestContact = Console.ReadLine();
+        Console.WriteLine($"Hello {guestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
         
     }
     
     //Returns assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"Name: {GuestName}, Company: {GuestCompany}, Email: {GuestEmail}, Contact: {GuestContact}");
+        string Message = ($"Name: {guestName}, Company: {guestCompany}, Email: {guestName}, Contact: {guestContact}");
         return Message;
     }
 
-    //Returns the number of people that are left in the building.
+    
     //Needs to account for employees also!!!
  
     //Reads the check in file and counts the lines and saves in Guestcount
-    private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
-    private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
-
-    private int GuestCount = 0;
-
-    public void UpdateGuestCount()
-    {
-       Console.WriteLine($"\nThe number of people on the premises is: {GuestCount}\n");
-    }
-
-    public void CheckedIn()
-    {
-        GuestCount ++;       
-    }
-
-    public void CheckedOut()
-    {
-        GuestCount -= 1;        
-    }
-
+    private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
+    private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
+    
 }

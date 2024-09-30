@@ -2,44 +2,44 @@ namespace HYDAC_Projekt;
 
 public class Employee
 {
-    private string EmployeeName = "";
-    private string EmployeeEmail = "";
-    private string EmployeeDepartment = "";
+    private string employeeName = "";
+    private string employeeEmail = "";
+    private string employeeDepartment = "";
     
     //Asks the employee for their email
     public void EmployeeInfo()
     {
         Console.WriteLine("Please enter your email address: ");
-        EmployeeEmail = Console.ReadLine();
+        employeeEmail = Console.ReadLine();
         
-        switch (EmployeeEmail)
+        switch (employeeEmail)
         {
             case "jh@hydac.com":
-                EmployeeName = "Jens Haugaard";
-                EmployeeDepartment = "CEO";
-                EmployeeEmail = "jh@hydac.com";
+                employeeName = "Jens Haugaard";
+                employeeDepartment = "CEO";
+                employeeEmail = "jh@hydac.com";
                 break;
             
             case "sm@hydac.com":
-                EmployeeName = "Søren Madsen";
-                EmployeeDepartment = "Front Office";
-                EmployeeEmail = "sm@hydac.com";
+                employeeName = "Søren Madsen";
+                employeeDepartment = "Front Office";
+                employeeEmail = "sm@hydac.com";
                 break;
         }
         
         Console.Clear();
-        Console.WriteLine($"Hello {EmployeeName}");
+        Console.WriteLine($"Hello {employeeName}");
     }
     
     public string Contact()
     {
-        return EmployeeName + " from " + EmployeeDepartment;
+        return employeeName + " from " + employeeDepartment;
     }
     
     //Returns the assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"Name: {EmployeeName}, Email: {EmployeeEmail}, Department: {EmployeeDepartment}");
+        string Message = ($"Name: {employeeName}, Email: {employeeEmail}, Department: {employeeDepartment}");
         return Message;
     }
 }

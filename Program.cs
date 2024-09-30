@@ -24,6 +24,7 @@ class Program
                     EmployeeCheckIn.EmployeeInfo();
                     //Running the employee check-in method from log class, using the variable from employee class in order to save the inputted data
                     ECheckIn.EmployeeCheckIn(EmployeeCheckIn);
+                    
                     break;
 
                 case 2:
@@ -39,13 +40,11 @@ class Program
                             GuestCheckIn.PreviousGuest();
                             //Running the guest check-in method from log class, using the variable from guest class in order to save the inputted data
                             GCheckIn.GuestCheckIn(GuestCheckIn);
-                            GuestCheckIn.CheckedIn();
                             break;
                         case 2:
                             GuestCheckIn.NewGuest();
                             //Running the guest check-in method from log class, using the variable from guest class in order to save the inputted data
                             GCheckIn.GuestCheckIn(GuestCheckIn);
-                            GuestCheckIn.CheckedIn();
                             break;
                     }
                     break;
@@ -56,13 +55,12 @@ class Program
                     Log GCheckOut = new Log();
                     Guest GuestCheckOut = new Guest();
                     GCheckOut.GuestCheckOut(GuestCheckOut);                  
-                    GuestCheckOut.CheckedOut();
                     break;
 
                 case 4:
                     //Shows how many people are checked in
-                    Guest PeopleInBuilding = new Guest();
-                    PeopleInBuilding.UpdateGuestCount();
+                    Log PeopleInBuilding = new Log();
+                    PeopleInBuilding.PeopleCheckedIn();
                     break;
 
                 case 0:
@@ -74,6 +72,7 @@ class Program
                     MenuStart.Error();
                     break;
             }
+            
         } while (MenuHold == true);
     }
 }
