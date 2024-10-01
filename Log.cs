@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using System.Security.Principal;
+using System.IO;
 
 namespace HYDAC_Projekt;
 
@@ -57,6 +58,22 @@ public class Log
     public void PeopleCheckedIn()
     {
         Console.WriteLine($"\nThe number of people on the premises is: {PeopleCount}\n");
+    }
+    
+    private string Line;
+    public void PreviousGuestCheckIn(Guest GuestCheckIn)
+    {
+
+        StreamReader Reader = new StreamReader(CheckIn);
+        Line = Reader.ReadLine();
+
+        while (Line != null)
+        {
+            Console.WriteLine(Line);
+            Line = Reader.ReadLine();
+        }
+        Reader.Close();
+
     }
 }
 

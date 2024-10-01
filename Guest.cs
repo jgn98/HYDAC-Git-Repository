@@ -4,12 +4,20 @@ public class Guest
 
 {
     private string guestName = "";
+
+    public string GuestName { get => guestName; set => guestName = value; }
     
     private string guestEmail = "";
+    
+    public string GuestEmail { get => guestEmail; set => guestEmail = value; }
 
     private string guestCompany = "";
+    
+    public string GuestCompany { get => guestCompany; set => guestCompany = value; }
 
     private string guestContact = "";
+    
+    public string GuestContact { get => guestContact; set => guestContact = value; }
 
     Employee ContactInfo = new Employee();
     
@@ -18,16 +26,16 @@ public class Guest
     public void NewGuest()
     {
         Console.WriteLine("Please enter your name: ");
-        guestName = Console.ReadLine();
+        GuestName = Console.ReadLine();
 
         Console.WriteLine("Please enter your company: ");
-        guestCompany = Console.ReadLine();
+        GuestCompany = Console.ReadLine();
 
         Console.WriteLine("Please enter your e-mail address: ");
-        guestName = Console.ReadLine();
+        GuestEmail = Console.ReadLine();
 
         Console.WriteLine("Please enter your contact person: ");
-        guestContact = Console.ReadLine();
+        GuestContact = Console.ReadLine();
         
         Console.WriteLine("Please confirm that you have received and read the safety folder:\n" +
                           "1. Yes\n" +
@@ -48,14 +56,14 @@ public class Guest
         string Message = "";
         if (Folder == true)
         {
-            Message = $"Hello {guestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
+            Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
             Console.Clear();
             Console.WriteLine(Message);     
         }
         else if (Folder == false)
         {
             Message =
-                $"Hello {guestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
+                $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
             Console.Clear();
             Console.WriteLine(Message);
             Folder = true;
@@ -67,17 +75,17 @@ public class Guest
     public void PreviousGuest()
     {
         Console.WriteLine("Please enter your email address: ");
-        guestName = Console.ReadLine();
+        GuestName = Console.ReadLine();
         Console.WriteLine("Please enter your contact person: ");
-        guestContact = Console.ReadLine();
-        Console.WriteLine($"Hello {guestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
+        GuestContact = Console.ReadLine();
+        Console.WriteLine($"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
         
     }
     
     //Returns assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"Name: {guestName}, Company: {guestCompany}, Email: {guestName}, Contact: {guestContact}");
+        string Message = ($"Name: {GuestName}, Company: {GuestCompany}, Email: {GuestName}, Contact: {GuestContact}");
         return Message;
     }
 
