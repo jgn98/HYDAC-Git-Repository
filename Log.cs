@@ -6,9 +6,9 @@ namespace HYDAC_Projekt;
 public class Log
 {
     //File path for the log file
-    string CheckIn = "C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
+    string CheckIn = "C:/Users/Sydbank/Desktop/Projekter/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
 
-    string CheckOut = "C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
+    string CheckOut = "C:/Users/Sydbank/Desktop/Projekter/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
 
     //Keeps track of people on the premises
     private static int PeopleCount;

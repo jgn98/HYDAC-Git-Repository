@@ -25,6 +25,24 @@ public class Employee
                 employeeDepartment = "Front Office";
                 employeeEmail = "sm@hydac.com";
                 break;
+
+            case "lp@hydac.com":
+                employeeName = "Lasse Petersen";
+                employeeDepartment = "Ekstern Salg";
+                employeeEmail = "lp@hydac.com";
+                break;
+
+            case "rs@hydac.com":
+                employeeName = "Rasmus W. Sørensen";
+                employeeDepartment = "R&D";
+                employeeEmail = "ra@hydac.com";
+                break;
+
+            case "bn@hydac.com":
+                employeeName = "Benjamin Nielsen";
+                employeeDepartment = "Planlæning, Projektering & Support";
+                employeeEmail = "bn@hydac.com";
+                break;
         }
         
         Console.Clear();

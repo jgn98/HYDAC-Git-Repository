@@ -58,3 +58,18 @@ C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\refin
 C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.pdb
 C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.genruntimeconfig.cache
 C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\ref\HYDAC Projekt.dll
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.exe
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.deps.json
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.runtimeconfig.json
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.dll
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.pdb
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.AssemblyInfoInputs.cache
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.AssemblyInfo.cs
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.sourcelink.json
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.dll
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\refint\HYDAC Projekt.dll
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.pdb
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.genruntimeconfig.cache
+C:\Users\Sydbank\Desktop\Projekter\HYDAC-Git-Repository\obj\Debug\net8.0\ref\HYDAC Projekt.dll
