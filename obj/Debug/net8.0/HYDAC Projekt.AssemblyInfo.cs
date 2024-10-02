@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HYDAC Projekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb38cabefe48778c2889293f6d2da54146092886")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28ec7cb7f6a5347df18ea3c39a90f27043ee9c38")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7024dc7ae08a125694ba5c72500f3c3965ef8f28")]
 [assembly: System.Reflection.AssemblyProductAttribute("HYDAC Projekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HYDAC Projekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
