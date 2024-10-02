@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,6 +12,8 @@
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\hydacguestscheckin.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:hydacguestscheckin.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -19,16 +22,36 @@
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:hydacguestscheckout.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+<<<<<<< Updated upstream
+=======
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|c:\\users\\simon\\source\\repos\\hydac-git-repository\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC237EE-DABE-4789-AAB7-60FC2044C0D7}|HYDAC Projekt.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +61,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,19 +77,66 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 0,
+              "Title": "HydacGuestsCheckIn.txt",
+              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
+              "RelativeDocumentMoniker": "HydacGuestsCheckIn.txt",
+              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
+              "RelativeToolTip": "HydacGuestsCheckIn.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-29T13:16:44.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HydacGuestsCheckOut.txt",
+              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckOut.txt",
+              "RelativeDocumentMoniker": "HydacGuestsCheckOut.txt",
+              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckOut.txt",
+              "RelativeToolTip": "HydacGuestsCheckOut.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-29T13:16:50.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Guest.cs",
+              "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Guest.cs",
+              "RelativeDocumentMoniker": "Guest.cs",
+              "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Guest.cs",
+              "RelativeToolTip": "Guest.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwCoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T18:32:45.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+>>>>>>> Stashed changes
               "Title": "Log.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Log.cs",
               "RelativeDocumentMoniker": "Log.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Log.cs",
               "RelativeToolTip": "Log.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCYAAAAJAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAFkAAAAAAAAAAAAjwGgAAAAkAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:43.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "HydacGuestsCheckIn.txt",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\HydacGuestsCheckIn.txt",
@@ -101,36 +175,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Employee.cs",
               "RelativeDocumentMoniker": "Employee.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Employee.cs",
               "RelativeToolTip": "Employee.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwAkAAAAeAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:45.715Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwD8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:43.415Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
               "ToolTip": "C:\\Users\\Simon\\source\\repos\\HYDAC-Git-Repository\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:32:42.805Z"
             }

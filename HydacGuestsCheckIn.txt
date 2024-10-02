@@ -1,4 +1,13 @@
+<<<<<<< Updated upstream
 Name: 2, Company: 2, Email: 2, Contact: 2, 02-10-2024 13:08:43
 Name: 2, Company: 2, Email: 2, Contact: 2, 02-10-2024 13:08:48
 Name: 2, Company: 2, Email: 2, Contact: 2, 02-10-2024 13:17:08
 Name: , Email: 2, Department: , 02-10-2024 13:17:22
+=======
+simon, ucl, simon@gmail.com, jonas, 02-10-2024 14:11:24
+jonas, ucl, jonas@gmail.com, bo, 02-10-2024 14:11:46
+simon, ucl, simon@gmail.com, jonas, 02-10-2024 14:13:12
+simon, ucl, simon@gmail.com, jonas, 02-10-2024 14:13:31
+jonas, ucl, jonas@gmail.com, simon, 02-10-2024 14:16:42
+simon, ucl, simon@gmail.com, bo, 02-10-2024 14:16:51
+>>>>>>> Stashed changes
