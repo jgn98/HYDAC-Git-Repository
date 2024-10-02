@@ -6,9 +6,9 @@ namespace HYDAC_Projekt;
 public class Log
 {
     //File path for the log file
-    string CheckIn = "C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
-
-    string CheckOut = "C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
+    string CheckIn = "C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
+    
+    string CheckOut = "C:/Users/Simon/source/repos/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
 
     //Keeps track of people on the premises
     private static int PeopleCount;
@@ -31,12 +31,20 @@ public class Log
     {
         //System reads the current time and date
         string Time = DateTime.Now.ToString();
-        //Subtract from PeopleCount
-        PeopleCount--;
-        //Writes guest check-out info to the log file
-        using (StreamWriter writer = new StreamWriter(CheckOut, true))
+        
+        //Checks if PeolpeCount is 0, if not substracts one
+        if (PeopleCount <= 0)
         {
-            writer.WriteLine($"{GuestCheckOut.LogInfo()}, {Time}");
+            PeopleCount = 0;
+        }
+        else
+        {
+            PeopleCount--;
+            //Writes guest check-out info to the log file
+            using (StreamWriter writer = new StreamWriter(CheckOut, true))
+            {
+                writer.WriteLine($"{GuestCheckOut.LogInfo()}, {Time}");
+            }
         }
     }
     public void EmployeeCheckIn(Employee EmployeeCheckIn)
@@ -56,7 +64,15 @@ public class Log
     //Returns and prints the number of people that are left in the building.
     public void PeopleCheckedIn()
     {
-        Console.WriteLine($"\nThe number of people on the premises is: {PeopleCount}\n");
+        //Checks if theres any occupants on the premises
+        if (PeopleCount <= 0)
+        {
+            Console.WriteLine("Congratulations! You are the first to arrive today! Have a great day!");
+        }
+        else
+        {
+            Console.WriteLine($"\nThe number of people on the premises is: {PeopleCount}\n");
+        }
     }
 }
 
