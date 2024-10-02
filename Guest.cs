@@ -59,8 +59,7 @@ public class Guest
             Console.Clear();
             Console.WriteLine(Message);
             Folder = true;
-        }
-        
+        }        
     }
     
     //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
@@ -71,7 +70,6 @@ public class Guest
         Console.WriteLine("Please enter your contact person: ");
         guestContact = Console.ReadLine();
         Console.WriteLine($"Hello {guestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
-        
     }
     
     //Returns assigned values to the log file when called
@@ -79,13 +77,5 @@ public class Guest
     {
         string Message = ($"Name: {guestName}, Company: {guestCompany}, Email: {guestName}, Contact: {guestContact}");
         return Message;
-    }
-
-    
-    //Needs to account for employees also!!!
- 
-    //Reads the check in file and counts the lines and saves in Guestcount
-    private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
-    private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
-    
+    }   
 }
