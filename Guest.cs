@@ -18,74 +18,80 @@ public class Guest
     private string guestContact = "";
     
     public string GuestContact { get => guestContact; set => guestContact = value; }
-
-    Employee ContactInfo = new Employee();
     
 
     //Asks the new guest for several inputs
     public void NewGuest()
     {
-        Console.WriteLine("Please enter your name: ");
-        GuestName = Console.ReadLine();
+        try
+        {
+            Console.WriteLine("Please enter your name: ");
+            GuestName = Console.ReadLine();
 
-        Console.WriteLine("Please enter your company: ");
-        GuestCompany = Console.ReadLine();
+            Console.WriteLine("Please enter your company: ");
+            GuestCompany = Console.ReadLine();
 
-        Console.WriteLine("Please enter your e-mail address: ");
-        GuestEmail = Console.ReadLine();
+            Console.WriteLine("Please enter your e-mail address: ");
+            GuestEmail = Console.ReadLine();
 
-        Console.WriteLine("Please enter your contact person: ");
-        GuestContact = Console.ReadLine();
+            Console.WriteLine("Please enter your contact person: ");
+            GuestContact = Console.ReadLine();
         
-        Console.WriteLine("Please confirm that you have received and read the safety folder:\n" +
-                          "1. Yes\n" +
-                          "2. No");
-        int Safety = int.Parse(Console.ReadLine());
-        bool Folder = false;
+            Console.WriteLine("Please confirm that you have received and read the safety folder:\n" +
+                              "1. Yes\n" +
+                              "2. No");
+            int Safety = int.Parse(Console.ReadLine());
+            bool Folder = false;
 
-        switch (Safety)
-        {
-            case 1:
+            switch (Safety)
+            {
+                case 1:
+                    Folder = true;
+                    break;
+                case 2:
+                    Folder = false;
+                    break;
+            }
+
+            string Message = "";
+            if (Folder == true)
+            {
+                Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
+                Console.Clear();
+                Console.WriteLine(Message);     
+            }
+            else if (Folder == false)
+            {
+                Message =
+                    $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
+                Console.Clear();
+                Console.WriteLine(Message);
                 Folder = true;
-                break;
-            case 2:
-                Folder = false;
-                break;
+            }
         }
-
-        string Message = "";
-        if (Folder == true)
+        catch (Exception e)
         {
-            Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
-            Console.Clear();
-            Console.WriteLine(Message);     
+            Console.WriteLine(e);
+            throw;
         }
-        else if (Folder == false)
-        {
-            Message =
-                $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
-            Console.Clear();
-            Console.WriteLine(Message);
-            Folder = true;
-        }
+       
         
     }
     
     //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
-    public void PreviousGuest()
+    public void PreviousGuest(Log GCheckIn)
     {
         Console.WriteLine("Please enter your email address: ");
-        GuestName = Console.ReadLine();
+        GuestEmail = Console.ReadLine();
         Console.WriteLine("Please enter your contact person: ");
         GuestContact = Console.ReadLine();
-        Console.WriteLine($"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n ");
-        
+
     }
     
     //Returns assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"Name: {GuestName}, Company: {GuestCompany}, Email: {GuestName}, Contact: {GuestContact}");
+        string Message = ($"{GuestName}, {GuestCompany}, {GuestEmail}, {GuestContact}");
         return Message;
     }
 

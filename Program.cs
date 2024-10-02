@@ -37,9 +37,11 @@ class Program
                     {
                         //Switch cases in order to determine whether the guest has previously filled in all information
                         case 1:
-                            GuestCheckIn.PreviousGuest();
+                            GuestCheckIn.PreviousGuest(GCheckIn);
+                            GCheckIn.PreviousGuestCheckIn(GuestCheckIn);
                             //Running the guest check-in method from log class, using the variable from guest class in order to save the inputted data
                             GCheckIn.GuestCheckIn(GuestCheckIn);
+
                             break;
                         case 2:
                             GuestCheckIn.NewGuest();
@@ -54,7 +56,8 @@ class Program
                     MenuStart.CheckOut();
                     Log GCheckOut = new Log();
                     Guest GuestCheckOut = new Guest();
-                    GCheckOut.GuestCheckOut(GuestCheckOut);                  
+                    GCheckOut.GuestCheckOut(GuestCheckOut);
+                    GCheckOut.GuestCheckOutLog(GuestCheckOut);                  
                     break;
 
                 case 4:

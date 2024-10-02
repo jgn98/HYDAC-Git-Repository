@@ -10,30 +10,51 @@ public class Employee
     public void EmployeeInfo()
     {
         Console.WriteLine("Please enter your email address: ");
-        employeeEmail = Console.ReadLine();
-        
-        switch (employeeEmail)
+        try
         {
-            case "jh@hydac.com":
-                employeeName = "Jens Haugaard";
-                employeeDepartment = "CEO";
-                employeeEmail = "jh@hydac.com";
-                break;
+            employeeEmail = Console.ReadLine();
+        
+            switch (employeeEmail)
+            {
+                case "jh@hydac.com":
+                    employeeName = "Jens Haugaard";
+                    employeeDepartment = "CEO";
+                    employeeEmail = "jh@hydac.com";
+                    break;
             
-            case "sm@hydac.com":
-                employeeName = "Søren Madsen";
-                employeeDepartment = "Front Office";
-                employeeEmail = "sm@hydac.com";
-                break;
+                case "sm@hydac.com":
+                    employeeName = "Søren Madsen";
+                    employeeDepartment = "Front Office";
+                    employeeEmail = "sm@hydac.com";
+                    break;
+                case "lp@hydac.com":
+                    employeeName = "Lasse Petersen";
+                    employeeDepartment = "External Sales";
+                    employeeEmail = "lp@hydac.com";
+                    break;
+
+                case "rs@hydac.com":
+                    employeeName = "Rasmus W. Sørensen";
+                    employeeDepartment = "R&D";
+                    employeeEmail = "ra@hydac.com";
+                    break;
+
+                case "bn@hydac.com":
+                    employeeName = "Benjamin Nielsen";
+                    employeeDepartment = "Planning, Projecting & Support";
+                    employeeEmail = "bn@hydac.com";
+                    break;
+            }
+        
+            Console.Clear();
+            Console.WriteLine($"Hello {employeeName}");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
         }
         
-        Console.Clear();
-        Console.WriteLine($"Hello {employeeName}");
-    }
-    
-    public string Contact()
-    {
-        return employeeName + " from " + employeeDepartment;
     }
     
     //Returns the assigned values to the log file when called
