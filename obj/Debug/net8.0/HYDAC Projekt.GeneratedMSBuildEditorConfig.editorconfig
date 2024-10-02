@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HYDAC_Projekt
-build_property.ProjectDir = /Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/
+build_property.ProjectDir = C:\Users\Simon\source\HYDAC-Git-Repository\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

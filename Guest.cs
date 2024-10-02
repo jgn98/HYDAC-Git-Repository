@@ -93,13 +93,5 @@ public class Guest
     {
         string Message = ($"{GuestName}, {GuestCompany}, {GuestEmail}, {GuestContact}");
         return Message;
-    }
-
-    
-    //Needs to account for employees also!!!
- 
-    //Reads the check in file and counts the lines and saves in Guestcount
-    private static int GuestcountCheckIn = File.ReadAllLines(@"C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckIn.txt").Length;
-    private static int GuestcountCheckOut = File.ReadAllLines(@"C:/Users/simon/Desktop/Hydac Projekt/HYDAC-Git-Repository/HydacGuestsCheckOut.txt").Length;
-    
+    }    
 }

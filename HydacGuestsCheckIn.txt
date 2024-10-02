@@ -1,4 +1,2 @@
-
-Jonas, UCL, testmail, Simon, 02.10.2024 12.01.00
-Jonas, UCL, testmail, Bo, 02.10.2024 12.01.09
-Jonas, UCL, testmail, Marcus, 02.10.2024 12.01.33
+Simon, ucl, simon@gmail.com, Jonas, 02-10-2024 14:41:22
+Simon, ucl, simon@gmail.com, Jonas, 02-10-2024 14:41:36

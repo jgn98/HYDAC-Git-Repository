@@ -8,9 +8,9 @@ namespace HYDAC_Projekt;
 public class Log
 {
     //File path for the log file
-    string CheckIn = "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
+    string CheckIn = "C:/Users/Simon/source/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
 
-    string CheckOut = "/Users/jonasg.nielsen/RiderProjects/HYDAC/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
+    string CheckOut = "C:/Users/Simon/source/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
 
     //Keeps track of people on the premises
     private static int PeopleCount;
@@ -41,10 +41,16 @@ public class Log
 
     public void GuestCheckOutLog(Guest GuestCheckOut)
     {
-        try
-        {
+        
             //System reads the current time and date
             string Time = DateTime.Now.ToString();
+
+        if (PeopleCount <= 0)
+        {
+            PeopleCount = 0;
+        }
+        else
+        {
             //Subtract from PeopleCount
             PeopleCount--;
             //Writes guest check-out info to the log file
@@ -52,11 +58,6 @@ public class Log
             {
                 writer.WriteLine($"{GuestCheckOut.LogInfo()}, {Time}");
             }
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
         }
     }
 
@@ -85,8 +86,16 @@ public class Log
     //Returns and prints the number of people that are left in the building.
     public void PeopleCheckedIn()
     {
-        Console.WriteLine($"\nThe number of people on the premises is: {PeopleCount}\n");
+        if (PeopleCount <= 0)
+        {
+            Console.WriteLine("Congratulations! You have the place to yourself. Have a great day!");
+        }
+        else
+        {
+            Console.WriteLine($"\nThe number of people on the premises is: {PeopleCount}\n");
+        } 
     }
+
 
     private string Line;
 

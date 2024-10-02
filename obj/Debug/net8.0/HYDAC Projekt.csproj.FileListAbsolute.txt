@@ -58,3 +58,18 @@ C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\refin
 C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.pdb
 C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.genruntimeconfig.cache
 C:\Users\simon\Desktop\Hydac Projekt\HYDAC-Git-Repository\obj\Debug\net8.0\ref\HYDAC Projekt.dll
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.AssemblyInfoInputs.cache
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.AssemblyInfo.cs
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.sourcelink.json
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.dll
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\refint\HYDAC Projekt.dll
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.pdb
+C:\Users\Simon\source\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.exe
+C:\Users\Simon\source\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.deps.json
+C:\Users\Simon\source\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.runtimeconfig.json
+C:\Users\Simon\source\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.dll
+C:\Users\Simon\source\HYDAC-Git-Repository\bin\Debug\net8.0\HYDAC Projekt.pdb
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\HYDAC Projekt.genruntimeconfig.cache
+C:\Users\Simon\source\HYDAC-Git-Repository\obj\Debug\net8.0\ref\HYDAC Projekt.dll
