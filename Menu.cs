@@ -38,7 +38,7 @@ public class Menu
         //Writes check-out menu to console
         Console.Clear();
         Console.WriteLine("Please enter your email address to check-out: ");
-        string CheckOut = Console.ReadLine();
+        
     }
 
     public void Error()

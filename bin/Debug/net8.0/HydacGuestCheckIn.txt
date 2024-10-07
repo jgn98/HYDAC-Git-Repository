@@ -5,3 +5,7 @@ Simon, UCL, simonmail, Bo, 07.10.2024 14.01.51
 Jonas, UCL, jonasmail, Jeppe, 07.10.2024 14.02.13
 Jonas Gade, UCL, jonastest, Simon Ross, 07.10.2024 14.10.53
 Jonas, Gade, jonastest, Bo, 07.10.2024 14.11.04
+Line Brejnrod, UCL, linetest, Jonas, 07.10.2024 15.33.44
+Line Brejnrod, ,, linetest, Jonas, 07.10.2024 15.53.56
+Jonas, Test, jonastestmail, Line, 07.10.2024 16.00.02
+Dinmor; hjemme; dinmormail; dinfar, 07.10.2024 16.04.20

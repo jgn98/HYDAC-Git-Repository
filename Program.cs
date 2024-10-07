@@ -57,7 +57,6 @@ class Program
                     Log GCheckOut = new Log();
                     Guest GuestCheckOut = new Guest();
                     GCheckOut.GuestCheckOut(GuestCheckOut);
-                    GCheckOut.GuestCheckOutLog(GuestCheckOut);                  
                     break;
 
                 case 4:

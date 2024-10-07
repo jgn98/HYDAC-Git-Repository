@@ -40,28 +40,6 @@ public class Log
         
     }
 
-    public void GuestCheckOutLog(Guest GuestCheckOut)
-    {
-        
-            //System reads the current time and date
-            string Time = DateTime.Now.ToString();
-
-        if (PeopleCount <= 0)
-        {
-            PeopleCount = 0;
-        }
-        else
-        {
-            //Subtract from PeopleCount
-            PeopleCount--;
-            //Writes guest check-out info to the log file
-            using (StreamWriter writer = new StreamWriter(CheckOut, true))
-            {
-                writer.WriteLine($"{GuestCheckOut.LogInfo()}, {Time}");
-            }
-        }
-    }
-
     public void EmployeeCheckIn(Employee EmployeeCheckIn)
     {
         try
@@ -98,7 +76,7 @@ public class Log
     }
 
 
-    private string Line;
+    
 
     public void PreviousGuestCheckIn(Guest GuestCheckIn)
     {
@@ -111,7 +89,7 @@ public class Log
             
                 if (Regex.IsMatch(line, @"\b" + Regex.Escape(GuestCheckIn.GuestEmail) + @"\b"))
                 {
-                    string[] parts = Regex.Split(line, "(,)");
+                    string[] parts = Regex.Split(line, ",");
                     // If the line contains the email, output the line
                     GuestCheckIn.GuestName = parts[0];
                     GuestCheckIn.GuestCompany = parts[1];
@@ -131,6 +109,8 @@ public class Log
     {
         try
         {
+            GuestCheckIn.GuestEmail = Console.ReadLine();
+            
             foreach (string line in File.ReadLines(CheckIn))
             {
             
@@ -138,13 +118,23 @@ public class Log
             
                 if (Regex.IsMatch(line, @"\b" + Regex.Escape(GuestCheckIn.GuestEmail) + @"\b"))
                 {
-                    string[] parts = Regex.Split(line, "(,)");
+                    string[] parts = Regex.Split(line, ",");
                     // If the line contains the email, output the line
                     GuestCheckIn.GuestName = parts[0];
                     GuestCheckIn.GuestCompany = parts[1];
                     GuestCheckIn.GuestEmail = parts[2];
                     GuestCheckIn.GuestContact = parts[3];
                 }
+            }
+
+            //System reads the current time and date
+            string Time = DateTime.Now.ToString();
+            
+            PeopleCount--;
+            //Writes guest check-out info to the log file
+            using (StreamWriter writer = new StreamWriter(CheckOut, true))
+            {
+                writer.WriteLine($"{GuestCheckIn.LogInfo()}, {Time}");
             }
             Console.WriteLine($"{GuestCheckIn.GuestName} has successfully been checked out\n ");
         }
