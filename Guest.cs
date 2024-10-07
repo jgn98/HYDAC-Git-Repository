@@ -85,7 +85,6 @@ public class Guest
         GuestEmail = Console.ReadLine();
         Console.WriteLine("Please enter your contact person: ");
         GuestContact = Console.ReadLine();
-
     }
     
     //Returns assigned values to the log file when called

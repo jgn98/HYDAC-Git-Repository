@@ -8,9 +8,10 @@ namespace HYDAC_Projekt;
 public class Log
 {
     //File path for the log file
-    string CheckIn = "C:/Users/Simon/source/HYDAC-Git-Repository/HydacGuestsCheckIn.txt";
-
-    string CheckOut = "C:/Users/Simon/source/HYDAC-Git-Repository/HydacGuestsCheckOut.txt";
+    static string CheckInPath = Path.GetFullPath(@"HydacGuestCheckIn.txt");
+    string CheckIn = CheckInPath;
+    static string CheckOutPath = Path.GetFullPath(@"HydacGuestCheckOut.txt");
+    string CheckOut = CheckOutPath;
 
     //Keeps track of people on the premises
     private static int PeopleCount;
@@ -110,7 +111,7 @@ public class Log
             
                 if (Regex.IsMatch(line, @"\b" + Regex.Escape(GuestCheckIn.GuestEmail) + @"\b"))
                 {
-                    string[] parts = Regex.Split(line, @"\W+");
+                    string[] parts = Regex.Split(line, "(,)");
                     // If the line contains the email, output the line
                     GuestCheckIn.GuestName = parts[0];
                     GuestCheckIn.GuestCompany = parts[1];
@@ -137,7 +138,7 @@ public class Log
             
                 if (Regex.IsMatch(line, @"\b" + Regex.Escape(GuestCheckIn.GuestEmail) + @"\b"))
                 {
-                    string[] parts = Regex.Split(line, @"\W+");
+                    string[] parts = Regex.Split(line, "(,)");
                     // If the line contains the email, output the line
                     GuestCheckIn.GuestName = parts[0];
                     GuestCheckIn.GuestCompany = parts[1];

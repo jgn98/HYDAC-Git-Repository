@@ -68,7 +68,16 @@ class Program
 
                 case 0:
                     //Stops the menu loop if 0 is inputted within the menu
-                    MenuHold = false;
+                    MenuStart.ConfirmClose();
+                    if (MenuStart.Choice == 1)
+                    {
+                        MenuHold = false;
+                    }
+
+                    if (MenuStart.Choice == 2)
+                    {
+                    }
+
                     break;
 
                 default:

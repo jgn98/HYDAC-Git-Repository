@@ -16,6 +16,14 @@ public class Menu
          Choice = int.Parse(Console.ReadLine());
     }
 
+    public void ConfirmClose()
+    {
+        Console.WriteLine("Are you sure you want to exit?\n" +
+                          "1. Exit\n" +
+                          "2. No, return to Main Menu");
+        Choice = int.Parse(Console.ReadLine());
+    }
+
     public void GuestMenu()
     {
         //Writes guest menu to console
