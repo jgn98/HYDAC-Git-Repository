@@ -22,6 +22,7 @@ public class Menu
         Console.WriteLine("Are you sure you want to exit?\n" +
                           "1. Exit\n" +
                           "2. No, return to Main Menu");
+        
         Choice = int.Parse(Console.ReadLine());
     }
 

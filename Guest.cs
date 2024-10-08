@@ -4,8 +4,14 @@ public class Guest
 
 {
     public string GuestName { get; set; }
-    
-    public string GuestEmail { get; set; }
+
+    private string _guestEmail;
+
+    public string GuestEmail
+    {
+        get => _guestEmail;
+        set => _guestEmail = value.ToLower();
+    }
     
     public string GuestCompany  { get; set; }
     
@@ -33,31 +39,31 @@ public class Guest
             Console.WriteLine("Please confirm that you have received and read the safety folder:\n" +
                               "1. Yes\n" +
                               "2. No");
-            int Safety = int.Parse(Console.ReadLine());
-            bool Folder = false;
+            int safety = int.Parse(Console.ReadLine());
+            bool folder = false;
 
-            switch (Safety)
+            switch (safety)
             {
                 case 1:
-                    Folder = true;
+                    folder = true;
                     break;
                 case 2:
-                    Folder = false;
+                    folder = false;
                     break;
             }
             Console.Clear();
-            string Message = "";
-            if (Folder == true)
+            string message = "";
+            if (folder == true)
             {
-                Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
-                Console.WriteLine(Message);     
+                message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
+                Console.WriteLine(message);     
             }
-            else if (Folder == false)
+            else if (folder == false)
             {
-                Message =
+                message =
                     $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
-                Console.WriteLine(Message);
-                Folder = true;
+                Console.WriteLine(message);
+                folder = true;
             }
         }
         catch (Exception e)
@@ -65,12 +71,10 @@ public class Guest
             Console.WriteLine(e);
             throw;
         }
-       
-        
     }
     
     //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
-    public void PreviousGuest(Log GCheckIn)
+    public void PreviousGuest(Log gCheckIn)
     {
         Console.Clear();
         Console.WriteLine("Please enter your email address: ");
@@ -83,7 +87,7 @@ public class Guest
     //Returns assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"{GuestName}, {GuestCompany}, {GuestEmail}, {GuestContact}");
-        return Message;
+        string message = ($"{GuestName},{GuestCompany},{GuestEmail},{GuestContact}");
+        return message;
     }    
 }

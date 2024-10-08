@@ -3,7 +3,14 @@ namespace HYDAC_Projekt;
 public class Employee
 {
     public string EmployeeName { get; set; }
-    public string EmployeeEmail { get; set; }
+
+    private string _employeeEmail;
+
+    public string EmployeeEmail
+    {
+        get => _employeeEmail;
+        set => _employeeEmail = value.ToLower();
+    }
     public string EmployeeDepartment { get; set; }
     
     //Asks the employee for their email
@@ -60,7 +67,7 @@ public class Employee
     //Returns the assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"{EmployeeName},{EmployeeEmail},{EmployeeDepartment}");
-        return Message;
+        string message = ($"{EmployeeName},{EmployeeEmail},{EmployeeDepartment}");
+        return message;
     }
 }
