@@ -3,21 +3,13 @@ namespace HYDAC_Projekt;
 public class Guest
 
 {
-    private string guestName;
-
-    public string GuestName { get => guestName; set => guestName = value; }
+    public string GuestName { get; set; }
     
-    private string guestEmail;
+    public string GuestEmail { get; set; }
     
-    public string GuestEmail { get => guestEmail; set => guestEmail = value; }
-
-    private string guestCompany;
+    public string GuestCompany  { get; set; }
     
-    public string GuestCompany { get => guestCompany; set => guestCompany = value; }
-
-    private string guestContact;
-    
-    public string GuestContact { get => guestContact; set => guestContact = value; }
+    public string GuestContact { get; set; }
     
 
     //Asks the new guest for several inputs
@@ -90,7 +82,7 @@ public class Guest
     //Returns assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"{guestName}, {guestCompany}, {guestEmail}, {guestContact}");
+        string Message = ($"{GuestName}, {GuestCompany}, {GuestEmail}, {GuestContact}");
         return Message;
     }    
 }

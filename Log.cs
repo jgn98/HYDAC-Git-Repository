@@ -8,9 +8,9 @@ namespace HYDAC_Projekt;
 public class Log
 {
     //File path for the log file
-    static string CheckInPath = Path.GetFullPath(@"HydacGuestCheckIn.txt");
+    static string CheckInPath = Path.GetFullPath(@"HydacCheckIn.txt");
     string CheckIn = CheckInPath;
-    static string CheckOutPath = Path.GetFullPath(@"HydacGuestCheckOut.txt");
+    static string CheckOutPath = Path.GetFullPath(@"HydacCheckOut.txt");
     string CheckOut = CheckOutPath;
 
     //Keeps track of people on the premises
@@ -137,6 +137,45 @@ public class Log
                 writer.WriteLine($"{GuestCheckIn.LogInfo()}, {Time}");
             }
             Console.WriteLine($"{GuestCheckIn.GuestName} has successfully been checked out\n ");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
+    public void EmployeeCheckOut(Employee EmployeeCheckIn)
+    {
+        try
+        {
+            EmployeeCheckIn.EmployeeEmail = Console.ReadLine();
+            
+            foreach (string line in File.ReadLines(CheckIn))
+            {
+            
+                // Regular expression to ensure exact match of the email address
+            
+                if (Regex.IsMatch(line, @"\b" + Regex.Escape(EmployeeCheckIn.EmployeeEmail) + @"\b"))
+                {
+                    string[] parts = Regex.Split(line, ",");
+                    // If the line contains the email, output the line
+                    EmployeeCheckIn.EmployeeName = parts[0];
+                    EmployeeCheckIn.EmployeeEmail = parts[1];
+                    EmployeeCheckIn.EmployeeDepartment = parts[2];
+                }
+            }
+
+            //System reads the current time and date
+            string Time = DateTime.Now.ToString();
+            
+            PeopleCount--;
+            //Writes guest check-out info to the log file
+            using (StreamWriter writer = new StreamWriter(CheckOut, true))
+            {
+                writer.WriteLine($"{EmployeeCheckIn.LogInfo()}, {Time}");
+            }
+            Console.WriteLine($"{EmployeeCheckIn.EmployeeName} has successfully been checked out\n ");
         }
         catch (Exception e)
         {

@@ -54,9 +54,19 @@ class Program
                 case 3:
                     //Calls checkout method
                     MenuStart.CheckOut();
-                    Log GCheckOut = new Log();
+                    Log LogCheckOut = new Log();
                     Guest GuestCheckOut = new Guest();
-                    GCheckOut.GuestCheckOut(GuestCheckOut);
+                    Employee EmployeeCheckOut = new Employee();
+                    switch (MenuStart.Choice)
+                    {
+                        case 1:
+                            LogCheckOut.EmployeeCheckOut(EmployeeCheckOut);
+                            break;
+                        case 2:
+                            LogCheckOut.GuestCheckOut(GuestCheckOut);
+                            break;
+                    }
+                    
                     break;
 
                 case 4:
