@@ -60,7 +60,7 @@ public class Employee
     //Returns the assigned values to the log file when called
     public string LogInfo()
     {
-        string Message = ($"{EmployeeName}, {EmployeeEmail}, {EmployeeDepartment}");
+        string Message = ($"{EmployeeName},{EmployeeEmail},{EmployeeDepartment}");
         return Message;
     }
 }

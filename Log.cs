@@ -65,12 +65,14 @@ public class Log
     //Returns and prints the number of people that are left in the building.
     public void PeopleCheckedIn()
     {
+        Console.Clear();
         if (PeopleCount <= 0)
         {
+
             Console.WriteLine("Congratulations! You have the place to yourself. Have a great day!");
         }
         else
-        {
+        { 
             Console.WriteLine($"\nThe number of people on the premises is: {PeopleCount}\n");
         } 
     }
@@ -136,6 +138,7 @@ public class Log
             {
                 writer.WriteLine($"{GuestCheckIn.LogInfo()}, {Time}");
             }
+            Console.Clear();
             Console.WriteLine($"{GuestCheckIn.GuestName} has successfully been checked out\n ");
         }
         catch (Exception e)
@@ -175,6 +178,7 @@ public class Log
             {
                 writer.WriteLine($"{EmployeeCheckIn.LogInfo()}, {Time}");
             }
+            Console.Clear();
             Console.WriteLine($"{EmployeeCheckIn.EmployeeName} has successfully been checked out\n ");
         }
         catch (Exception e)

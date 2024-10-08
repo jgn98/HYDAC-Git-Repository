@@ -42,7 +42,7 @@ public class Menu
                           "1. Employee\n" +
                           "2. Guest\n");
         Choice = int.Parse(Console.ReadLine());
-        
+        Console.Clear();
         Console.WriteLine("Please enter your email address to check-out: ");
         
     }

@@ -15,6 +15,7 @@ public class Guest
     //Asks the new guest for several inputs
     public void NewGuest()
     {
+        Console.Clear();
         try
         {
             Console.WriteLine("Please enter your name: ");
@@ -44,19 +45,17 @@ public class Guest
                     Folder = false;
                     break;
             }
-
+            Console.Clear();
             string Message = "";
             if (Folder == true)
             {
                 Message = $"Hello {GuestName}, please proceed to the waiting area. Your contact will be with you shortly\n";
-                Console.Clear();
                 Console.WriteLine(Message);     
             }
             else if (Folder == false)
             {
                 Message =
                     $"Hello {GuestName}, please ask front desk for a safety folder, and proceed to the waiting area. Your contact will be with you shortly \n";
-                Console.Clear();
                 Console.WriteLine(Message);
                 Folder = true;
             }
@@ -73,10 +72,12 @@ public class Guest
     //Asks the guest for their email and contact person if they have been here before, so they don't have to input everything again
     public void PreviousGuest(Log GCheckIn)
     {
+        Console.Clear();
         Console.WriteLine("Please enter your email address: ");
         GuestEmail = Console.ReadLine();
         Console.WriteLine("Please enter your contact person: ");
         GuestContact = Console.ReadLine();
+        Console.Clear();
     }
     
     //Returns assigned values to the log file when called

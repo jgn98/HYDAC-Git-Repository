@@ -60,7 +60,7 @@ class Program
                     switch (MenuStart.Choice)
                     {
                         case 1:
-                            LogCheckOut.EmployeeCheckOut(EmployeeCheckOut);
+                            LogCheckOut.EmployeeCheckOut(EmployeeCheckOut);                            
                             break;
                         case 2:
                             LogCheckOut.GuestCheckOut(GuestCheckOut);
@@ -71,7 +71,7 @@ class Program
 
                 case 4:
                     //Shows how many people are checked in
-                    Log PeopleInBuilding = new Log();
+                    Log PeopleInBuilding = new Log();                   
                     PeopleInBuilding.PeopleCheckedIn();
                     break;
 
@@ -85,8 +85,8 @@ class Program
 
                     if (MenuStart.Choice == 2)
                     {
+                        Console.Clear();
                     }
-
                     break;
 
                 default:
