@@ -107,25 +107,25 @@ public class Log
         
     }
     
-    public void GuestCheckOut(Guest guestCheckIn)
+    public void GuestCheckOut(Guest guestCheckOut)
     {
         try
         {
-            guestCheckIn.GuestEmail = Console.ReadLine();
+            guestCheckOut.GuestEmail = Console.ReadLine();
             
             foreach (string line in File.ReadLines(_checkIn))
             {
             
                 // Regular expression to ensure exact match of the email address
             
-                if (Regex.IsMatch(line, @"\b" + Regex.Escape(guestCheckIn.GuestEmail) + @"\b"))
+                if (Regex.IsMatch(line, @"\b" + Regex.Escape(guestCheckOut.GuestEmail) + @"\b"))
                 {
                     string[] parts = Regex.Split(line, ",");
                     // If the line contains the email, output the line
-                    guestCheckIn.GuestName = parts[0];
-                    guestCheckIn.GuestCompany = parts[1];
-                    guestCheckIn.GuestEmail = parts[2];
-                    guestCheckIn.GuestContact = parts[3];
+                    guestCheckOut.GuestName = parts[0];
+                    guestCheckOut.GuestCompany = parts[1];
+                    guestCheckOut.GuestEmail = parts[2];
+                    guestCheckOut.GuestContact = parts[3];
                 }
             }
 
@@ -136,10 +136,10 @@ public class Log
             //Writes guest check-out info to the log file
             using (StreamWriter writer = new StreamWriter(_checkOut, true))
             {
-                writer.WriteLine($"{guestCheckIn.LogInfo()}, {time}");
+                writer.WriteLine($"{guestCheckOut.LogInfo()}, {time}");
             }
             Console.Clear();
-            Console.WriteLine($"{guestCheckIn.GuestName} has successfully been checked out\n ");
+            Console.WriteLine($"{guestCheckOut.GuestName} has successfully been checked out\n ");
         }
         catch (Exception e)
         {
@@ -148,24 +148,24 @@ public class Log
         }
     }
     
-    public void EmployeeCheckOut(Employee employeeCheckIn)
+    public void EmployeeCheckOut(Employee employeeCheckOut)
     {
         try
         {
-            employeeCheckIn.EmployeeEmail = Console.ReadLine();
+            employeeCheckOut.EmployeeEmail = Console.ReadLine();
             
             foreach (string line in File.ReadLines(_checkIn))
             {
             
                 // Regular expression to ensure exact match of the email address
             
-                if (Regex.IsMatch(line, @"\b" + Regex.Escape(employeeCheckIn.EmployeeEmail) + @"\b"))
+                if (Regex.IsMatch(line, @"\b" + Regex.Escape(employeeCheckOut.EmployeeEmail) + @"\b"))
                 {
                     string[] parts = Regex.Split(line, ",");
                     // If the line contains the email, output the line
-                    employeeCheckIn.EmployeeName = parts[0];
-                    employeeCheckIn.EmployeeEmail = parts[1];
-                    employeeCheckIn.EmployeeDepartment = parts[2];
+                    employeeCheckOut.EmployeeName = parts[0];
+                    employeeCheckOut.EmployeeEmail = parts[1];
+                    employeeCheckOut.EmployeeDepartment = parts[2];
                 }
             }
 
@@ -176,10 +176,10 @@ public class Log
             //Writes guest check-out info to the log file
             using (StreamWriter writer = new StreamWriter(_checkOut, true))
             {
-                writer.WriteLine($"{employeeCheckIn.LogInfo()}, {time}");
+                writer.WriteLine($"{employeeCheckOut.LogInfo()}, {time}");
             }
             Console.Clear();
-            Console.WriteLine($"{employeeCheckIn.EmployeeName} has successfully been checked out\n ");
+            Console.WriteLine($"{employeeCheckOut.EmployeeName} has successfully been checked out\n ");
         }
         catch (Exception e)
         {
