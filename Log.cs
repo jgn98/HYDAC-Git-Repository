@@ -73,7 +73,7 @@ public class Log
         }
         else
         { 
-            Console.WriteLine($"\nThe number of people on the premises is: {_peopleCount}\n");
+            Console.WriteLine($"The number of people on the premises is: {_peopleCount}\n");
         } 
     }
 
